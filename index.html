@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PROVA</title>
+
+    <style media="screen">
+
+    body{
+      background-color: grey;
+    }
+    h1{
+      text-align: center;
+      color: blue;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h1 id="risultato">IL TUO PROFILO: </h1>
+
+    <script type="text/javascript">
+
+      alert('Ciao, è un piacere rivederti');
+
+      var nome = prompt('Digita il tuo Nome:');
+      var cognome = prompt('Digita il tuo Cognome:');
+      var età = prompt('Digita la tua età:');
+      var colore = prompt('Digita il tuo colore preferito:');
+
+      console.log(nome,cognome,colore,età);
+
+      document.getElementById('risultato').innerHTML= "IL TUO PROFILO: " + nome + cognome + colore + età;
+
+    </script>
+  </body>
+</html>
